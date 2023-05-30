@@ -24,33 +24,39 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_user`
+-- Table structure for table `tbuser`
 --
 
-CREATE TABLE `tb_user` (
-  `id` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL,
+CREATE TABLE `tbuser` (
+ `id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `password` varchar(100) NOT NULL
+  `email` varchar(50) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `firstname` varchar(30) NOT NULL,
+  `lastname` varchar(20) NOT NULL,
+  `bithday` DATE NUll,
+  `phone` BIGINT(10) NOT NULL,
+  `country` varchar(40) NOT NULL,
+  `state` varchar(30) NOT NULL,
+  `gender` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_user`
+-- Dumping data for table `tbuser`
 --
 
-INSERT INTO `tb_user` (`id`, `name`, `username`, `password`) VALUES
-(4, 'David', 'davidgtech', '123'),
-(5, 'Olivia Elijah', 'oelijah', '1234561'),
-(6, 'Daniel', 'daniel88', '15243');
+INSERT INTO `tbuser` (`id`, `username`, `email` , `password` , `firstname` , `lastname` , `birthday` , `phone` , `country` , `state` , `gender`) VALUES
+  (4, 'David', 'davidgtech', '123' , 'david' , 'tech' , '1999-05-30' , '987654321' , 'India' , 'UP' , 'Female');
+
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tb_user`
+-- Indexes for table `tbuser`
 --
-ALTER TABLE `tb_user`
+ALTER TABLE `tbuser`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -58,9 +64,9 @@ ALTER TABLE `tb_user`
 --
 
 --
--- AUTO_INCREMENT for table `tb_user`
+-- AUTO_INCREMENT for table `tbuser`
 --
-ALTER TABLE `tb_user`
+ALTER TABLE `tbuser`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
