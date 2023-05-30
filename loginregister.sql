@@ -26,6 +26,8 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `tbuser`
 --
+DROP TABLE IF EXISTS `tbuser` ;
+FLUSH TABLES `tbuser` ; /* or exclude `tablename` to flush all tables */
 
 CREATE TABLE `tbuser` (
  `id` int(11) NOT NULL,
