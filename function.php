@@ -1,7 +1,7 @@
 <?php
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "loginregister");
-$mysqli = new mysqli("localhost", "root", "", "loginregister");
+$conn = mysqli_connect("localhost", "root", "Vai30@phpmyadmin", "loginregister");
+$mysqli = new mysqli("localhost", "root", "Vai30@phpmyadmin", "loginregister");
 if ($mysqli->connect_errno!=0){
   echo $mysqli->connect_error;
   exit();
