@@ -48,7 +48,7 @@ CREATE TABLE `tbuser` (
 --
 
  INSERT INTO `tbuser`  (`username`, `email` , `password`) 
-   VALUES( '?', '?','?')";
+   VALUES( '?', '?','?');
 
 
 --
