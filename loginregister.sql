@@ -47,8 +47,8 @@ CREATE TABLE `tbuser` (
 -- Dumping data for table `tbuser`
 --
 
-INSERT INTO `tbuser` (`id`, `username`, `email` , `password` , `firstname` , `lastname` , `birthday` , `phone` , `country` , `state` , `gender`) VALUES
-  (4, 'David', 'davidgtech', '123' , 'david' , 'tech' , '1999-05-30' , '987654321' , 'India' , 'UP' , 'Female');
+ INSERT INTO `tbuser`  (`username`, `email` , `password`) 
+   VALUES( '?', '?','?')";
 
 
 --
