@@ -47,8 +47,7 @@ CREATE TABLE `tbuser` (
 -- Dumping data for table `tbuser`
 --
 
- INSERT INTO `tbuser`  (`username`, `email` , `password`) 
-   VALUES( '?', '?','?');
+
 
 
 --
