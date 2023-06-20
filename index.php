@@ -78,9 +78,7 @@ else{
                                       <button type="button"  id="button" value="submit" onclick="submitData();">Submit</button>
                               </div>
                               
-                              <div style="text-align:center;padding:10px;">
-                                   <a href="logout.php" style=>Logout</a>
-                               </div>
+                          
 
 
                     </form>
