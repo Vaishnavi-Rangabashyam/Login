@@ -36,7 +36,7 @@ CREATE TABLE `tbuser` (
   `password` varchar(100) NOT NULL,
   `firstname` varchar(30) NOT NULL,
   `lastname` varchar(20) NOT NULL,
-  `birthday` DATE NUll,
+  `birthday` date NOT NUll,
   `phone` BIGINT(10) NOT NULL,
   `country` varchar(40) NOT NULL,
   `state` varchar(30) NOT NULL,
